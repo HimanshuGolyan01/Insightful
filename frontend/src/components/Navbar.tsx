@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Sigma, UserCircle, Search } from "lucide-react";
+import { UserCircle, Search } from "lucide-react";
 import Profile from "./Profile";
 
 const Navbar: React.FC = () => {
