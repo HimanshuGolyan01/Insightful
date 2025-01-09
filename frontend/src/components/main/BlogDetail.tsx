@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
-import { LoaderCircle } from "lucide-react"; // Import LoaderCircle
+import { LoaderCircle } from "lucide-react"; 
 import Navbar from "../Navbar";
 import Avatar from "../Avatar";
 
@@ -14,7 +14,7 @@ interface BlogData {
 }
 
 function BlogDetail() {
-  const { id } = useParams<{ id: string }>(); // Get the blog post ID from the URL
+  const { id } = useParams<{ id: string }>(); 
   const [blog, setBlog] = useState<BlogData | null>(null);
   const [loading, setLoading] = useState(true);
 
@@ -61,7 +61,7 @@ function BlogDetail() {
     <div className="bg-white min-h-screen text-gray-200 max-w-full max-h-full mb-10">
       <Navbar />
       <div className="flex justify-center pt-[5rem]">
-        <div className="bg-gray-200 w-full w-[75rem] rounded-lg shadow-lg overflow-hidden mt-5"> 
+        <div className="bg-gray-200 w-full mx-10 rounded-lg shadow-lg overflow-hidden mt-5"> 
          
           <div className="bg-gradient-to-r from-purple-700 to-blue-700 p-6 text-center">
             <h1 className="text-3xl font-bold text-white">{blog.title}</h1>
@@ -73,7 +73,7 @@ function BlogDetail() {
             </p>
           </div>
 
-          {/* Blog Content */}
+          
           <div className="p-6">
             <div className="flex items-center mb-6">
               <Avatar
@@ -90,7 +90,7 @@ function BlogDetail() {
             </p>
           </div>
 
-          {/* Footer */}
+          
           <div className="bg-gray-700 p-4 text-sm text-gray-400">
             Estimated read time:{" "}
             <span className="text-black font-semibold">

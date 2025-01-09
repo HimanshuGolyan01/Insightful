@@ -36,7 +36,7 @@ const Profile = () => {
                             isVisible ? "translate-y-0" : "-translate-y-full"
                         }`}
                     >
-                        {/* Close Button */}
+                      
                         <button
                             className="absolute top-5 right-5 text-gray-500 hover:text-gray-700 transition-all"
                             onClick={closeProfileHandler}
@@ -44,7 +44,7 @@ const Profile = () => {
                             <X size={25} />
                         </button>
 
-                        {/* Profile Header */}
+                       
                         <div className="flex justify-center items-center bg-gradient-to-r from-cyan-400 to-blue-500 p-6 rounded-2xl shadow-lg mb-6">
                             <UserRoundIcon className="text-black text-6xl" />
                             <div className="ml-6 text-black font-semibold text-2xl">
@@ -52,7 +52,7 @@ const Profile = () => {
                             </div>
                         </div>
 
-                        {/* Create a Blog Card */}
+                       
                         <div
                             className="flex flex-col justify-between items-center p-6 rounded-2xl bg-white shadow-lg mb-6 cursor-pointer hover:shadow-xl transition-shadow"
                             onClick={createPostHandler}
@@ -66,7 +66,7 @@ const Profile = () => {
                             </div>
                         </div>
 
-                        {/* Your Posts Card */}
+                       
                         <div
                             className="flex flex-col justify-between items-center p-6 rounded-2xl bg-white shadow-lg mb-6 cursor-pointer hover:shadow-xl transition-shadow"
                             onClick={() => navigate("/my-posts")}
@@ -80,7 +80,7 @@ const Profile = () => {
                             </div>
                         </div>
 
-                        {/* Log Out Card */}
+                        
                         <div
                             className="flex flex-col justify-between items-center p-6 rounded-2xl bg-white shadow-lg cursor-pointer hover:shadow-xl transition-shadow"
                             onClick={logOutHandler}

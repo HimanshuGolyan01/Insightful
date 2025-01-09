@@ -39,7 +39,7 @@ const CreatePost: React.FC = () => {
                     Create a New Post
                 </h1>
                 <form onSubmit={handleSubmit} className="space-y-5">
-                    {/* Title Input */}
+                  
                     <div>
                         <label
                             htmlFor="title"
@@ -58,7 +58,7 @@ const CreatePost: React.FC = () => {
                         />
                     </div>
 
-                    {/* Content Input */}
+                  
                     <div>
                         <label
                             htmlFor="content"
@@ -77,7 +77,7 @@ const CreatePost: React.FC = () => {
                         />
                     </div>
 
-                    {/* Submit Button */}
+                   
                     <button
                         type="submit"
                         className="w-full bg-indigo-600 text-white py-2 px-4 rounded-lg shadow-md hover:bg-indigo-700 focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 transition duration-200"

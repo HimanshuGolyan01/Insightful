@@ -47,7 +47,7 @@ const Blog = ({ id, title, content, author }: BlogProps) => {
         isVisible ? "translate-y-0 opacity-100" : "translate-y-20 opacity-0"
       }`}
     >
-      {/* Header */}
+     
       <div className="flex items-center p-4 border-b border-gray-700">
         <Avatar initials={author ? author[0].toUpperCase() : "N/A"} />
         <div className="ml-4">
@@ -56,7 +56,7 @@ const Blog = ({ id, title, content, author }: BlogProps) => {
         </div>
       </div>
 
-      {/* Content */}
+     
       <div className="p-6">
         <h2 className="text-2xl font-bold text-black mb-4">{title}</h2>
         <div>
@@ -68,7 +68,7 @@ const Blog = ({ id, title, content, author }: BlogProps) => {
         <p className="mt-4 text-black">Read time: {Math.ceil(content.length / 100)} minutes</p>
       </div>
 
-      {/* Footer */}
+      
       <div className="p-4 bg-gray-200">
         <Link to={`/blog/${id}`}>
           <button className="w-25 py-4 px-4 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-medium text-center transition-colors duration-200">

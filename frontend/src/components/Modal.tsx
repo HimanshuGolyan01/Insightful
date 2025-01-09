@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import '../App.css'; // Import the CSS file with the animations
+import '../App.css';
 
 interface ModalProps {
     isOpen : boolean,

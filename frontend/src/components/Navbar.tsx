@@ -12,7 +12,7 @@ const Navbar: React.FC = () => {
   return (
     <div className="fixed top-0 z-10 w-full px-6 py-4 shadow-md bg-white">
       <div className="flex justify-between items-center">
-        {/* Logo Section */}
+        
         <div className="flex items-center space-x-4">
           <h1
             className="text-2xl font-extrabold text-gray-800"
@@ -22,7 +22,7 @@ const Navbar: React.FC = () => {
           </h1>
         </div>
 
-        {/* Search Section */}
+      
         <div className="relative flex items-center w-full max-w-md">
           <Search
             size={24}
@@ -37,7 +37,7 @@ const Navbar: React.FC = () => {
           />
         </div>
 
-        {/* User Section */}
+      
         <div className="flex items-center space-x-4">
           <span
             className="text-lg font-bold text-gray-800"
@@ -51,7 +51,7 @@ const Navbar: React.FC = () => {
         </div>
       </div>
 
-      {/* Profile Dropdown */}
+     
       {showProfile && (
         <div className="absolute right-6 top-16 mt-2 bg-white shadow-lg rounded-lg z-20 p-4">
           <Profile />
